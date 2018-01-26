@@ -1,0 +1,33 @@
+div.wrapper{
+    height: 100%;
+}
+div.info{
+    background-color: brown;
+    display: inline-block;
+    width: 35%;
+    height: 70%;
+    margin: 20px 0px 0px 49px;
+}
+div.info li{
+    list-style: none;
+    padding: 10px;
+    margin: 15px 140px 0px 0px;
+}
+div.images{
+    height: 70%;
+    background-color: cadetblue;
+    width: 50%;
+    float: right;
+    margin: 20px 34px 0px 0px;
+}
+img{
+    height: 100%;
+    width: 96%;
+}
+div.city{
+    background-color: darkgreen;
+    width: 50%;
+    margin: auto;
+    height: 10%;
+    font-size: 20px;
+}

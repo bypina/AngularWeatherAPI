@@ -1,0 +1,25 @@
+div.container{
+    height: 100%;
+    /* background-color: seagreen; */
+}
+div.header{
+    background-color: salmon;
+    height:25%;
+    text-align: center;
+    font-size: 25px;
+    color: bisque;
+}
+div.header ul{
+    background-color: yellowgreen;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 20px;
+}
+div.header a{
+    text-decoration: none;
+    color: bisque;
+}
+div.header li{
+    display: inline-block;
+    padding: 10px;
+}
