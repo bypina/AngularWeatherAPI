@@ -15,11 +15,13 @@ export class ChicagoComponent implements OnInit {
   humidity;
   wind;
   clouds;
+  city = "Chicago"
 
   constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
-    this.user = this._httpService.retrieveTasks()
+    let city = "Chicago"    
+    this.user = this._httpService.retrieveTasks(city)
     .then( user => {
       console.log(user)
       this.high = user[0].email;
