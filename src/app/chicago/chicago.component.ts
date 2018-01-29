@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpService } from './../http.service';
+import { Response } from '@angular/http/src/static_response';
 
 @Component({
   selector: 'app-chicago',
@@ -8,24 +9,16 @@ import { HttpService } from './../http.service';
 })
 export class ChicagoComponent implements OnInit {
 
-  user;
-  temp;
-  high;
-  low;
-  humidity;
-  wind;
-  clouds;
-  city = "Chicago"
+  stats
 
   constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
-    let city = "Chicago"    
-    this.user = this._httpService.retrieveTasks(city)
-    .then( user => {
-      console.log(user)
-      this.high = user[0].email;
-      console.log(this.high)
+    let city = "chicago"    
+    this._httpService.retrieveTasks(city)
+    .then(data => this.stats = data)
+    .then( function(data){
+      console.log(data,"RESPONSEEE")
     }); 
   }
 }
