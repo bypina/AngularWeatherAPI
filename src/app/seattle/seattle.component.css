@@ -5,7 +5,7 @@ div.info{
     background-color: brown;
     display: inline-block;
     width: 35%;
-    height: 70%;
+    height: 375px;
     margin: 20px 0px 0px 49px;
 }
 div.info li{
@@ -15,7 +15,7 @@ div.info li{
 }
 div.images{
     height: 70%;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     width: 50%;
     float: right;
     margin: 20px 34px 0px 0px;
@@ -25,9 +25,10 @@ img{
     width: 96%;
 }
 div.city{
-    background-color: darkgreen;
+    /* background-color: darkgreen; */
     width: 50%;
     margin: auto;
+    text-align: center;
     height: 10%;
     font-size: 20px;
 }
