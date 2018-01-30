@@ -24,7 +24,7 @@ export class WashingtonComponent implements OnInit {
     this._httpService.retrieveTasks(city)
     .then(data => {
         this.stats.tempHigh = data.main.temp_max
-        this.stats.tempLow = data.main.temp_min
+        this.stats.tempLow = data.main.temp_min 
         this.stats.temp = data.main.temp 
         this.stats.weather = data.weather[0].main     
         console.log(this.stats)
